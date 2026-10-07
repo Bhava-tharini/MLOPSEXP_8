@@ -1,0 +1,36 @@
+MLOps Architecture
+
+Raw Dataset
+    |
+    v
+Data Validation
+    |
+    v
+Feature Engineering
+    |
+    v
+Feature Selection
+    |
+    v
+Feature Store / Feature Management
+    |
+    v
+Model Training
+    |
+    +----> MLflow Experiment Tracking
+    |
+    v
+Model Evaluation
+    |
+    v
+Model Artifact / Registry
+    |
+    v
+FastAPI Deployment
+    |
+    v
+Monitoring + Drift Detection
+    |
+    +---- No drift ----> Continue serving
+    |
+    +---- Drift --------> Automated Retraining
